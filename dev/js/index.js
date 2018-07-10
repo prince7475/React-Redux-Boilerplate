@@ -9,6 +9,14 @@ import createLogger from 'redux-logger';
 import allReducers from './reducers';
 import App from './components/App';
 
+// const express = require('express')
+// const app = express()
+
+// app.listen(3000,(req,res)=>{
+//     console.log('Listing to 3000 ')
+// })
+
+
 const logger = createLogger();
 const store = createStore(
     allReducers,
@@ -21,3 +29,5 @@ ReactDOM.render(
     </Provider>,
     document.getElementById('root')
 );
+
+
